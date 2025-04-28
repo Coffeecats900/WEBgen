@@ -22,11 +22,11 @@
     "CHOCOLATE": "brown"
   },
   "possible_tints": {
-    "basic": ["none", "offwhite", "offwhite"],
-    "black": ["gray", "darkcream", "cream"],
-    "gray": ["gray"],
-    "ginger": ["darkcream", "cream", "pink"],
-    "brown": ["darkcream", "cream"],
+    "basic": [],
+    "black": [],
+    "gray": [],
+    "ginger": [],
+    "brown": [],
     "white": []
   },
   "tint_colours":
