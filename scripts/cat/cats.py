@@ -3512,7 +3512,7 @@ def create_cat(status, moons=None, biome=None):
     elif new_cat.moons == 0:
         new_cat.moons = randint(1, 5)
 
-    not_allowed_scars = [,
+    not_allowed_scars = [
     ]
 
     for scar in new_cat.pelt.scars:
