@@ -692,7 +692,7 @@ class Pelt:
         self,
         name: str = "SingleColour",
         length: str = "short",
-        colour: str = "WHITE",
+        colour: str = "CREAM",
         white_patches: str = None,
         eye_color: str = "BLUE",
         eye_colour2: str = None,
