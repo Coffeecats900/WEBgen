@@ -201,7 +201,7 @@ class Sprites:
                 "AMBER",
                 "HOLLY",
                 "IRIDESCENT",
-                "COBALT",
+                "HOTPINK",
                 "GREENYELLOW",
                 "PINKYELLOW",
                 "DAWN",
