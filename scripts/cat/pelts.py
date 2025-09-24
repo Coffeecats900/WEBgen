@@ -803,9 +803,9 @@ class Pelt:
             self.white_patches_tint = "none"
 
         # Eye Color Convert Stuff
-        if self.eye_colour == "BLUE2":
+        if self.eye_colour == "COBALT":
             self.eye_colour = "HOTPINK"
-        if self.eye_colour2 == "BLUE2":
+        if self.eye_colour2 == "COBALT":
             self.eye_colour2 = "HOTPINK"
 
         if self.eye_colour in ["BLUEYELLOW", "BLUEGREEN"]:
