@@ -181,7 +181,7 @@ class Pelt:
         "AMBER",
         "HOLLY",
         "IRIDESCENT",
-        "COBALT",
+        "HOTPINK",
         "GREENYELLOW",
         "PINKYELLOW",
         "DAWN",
@@ -199,6 +199,7 @@ class Pelt:
         "PINKYELLOW",
         "SUNSET",
         "EMBER",
+        "HOTPINK",
     ]
     blue_eyes = [
         "BLUE",
@@ -206,7 +207,6 @@ class Pelt:
         "CYAN",
         "IRIDESCENT",
         "HEATHERBLUE",
-        "COBALT",
         "SUNLITICE",
         "DAWN",
         "TWILIGHT",
@@ -512,7 +512,7 @@ class Pelt:
         "AMBER",
         "HOLLY",
         "IRIDESCENT",
-        "COBALT",
+        "HOTPINK",
         "GREENYELLOW",
         "PINKYELLOW",
         "DAWN",
@@ -804,9 +804,9 @@ class Pelt:
 
         # Eye Color Convert Stuff
         if self.eye_colour == "BLUE2":
-            self.eye_colour = "COBALT"
+            self.eye_colour = "HOTPINK"
         if self.eye_colour2 == "BLUE2":
-            self.eye_colour2 = "COBALT"
+            self.eye_colour2 = "HOTPINK"
 
         if self.eye_colour in ["BLUEYELLOW", "BLUEGREEN"]:
             if self.eye_colour == "BLUEYELLOW":
