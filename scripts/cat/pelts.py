@@ -1516,7 +1516,7 @@ class Pelt:
             color_group = sprites.cat_tints["colour_groups"].get(self.colour, "warm")
             color_tints = sprites.cat_tints["possible_tints"][color_group]
         else:
-            color_tints = ["basic", "warm", "cool", white", "monochrome", "brown"]
+            color_tints = []
 
         if base_tints or color_tints:
             self.tint = choice(base_tints + color_tints)
@@ -1533,7 +1533,7 @@ class Pelt:
                 )
                 color_tints = sprites.white_patches_tints["possible_tints"][color_group]
             else:
-                color_tints = ["basic", "warm", "cool", white", "monochrome", "brown"]
+                color_tints = []
 
             if base_tints or color_tints:
                 self.white_patches_tint = choice(base_tints + color_tints)
