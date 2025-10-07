@@ -513,8 +513,8 @@ class Pelt:
         "TRANS",        
     ]
     ginger_colours = ["CREAM", "ROSEGOLD", "ROSE", "PINK", "LILAC", "PEACH", "ORANGE", "GARNET", "RED", "GRAPE", "STRAWBERRY", "GHOST", "DARKPEARL",]
-    black_colours = ["INDIGO", "BLACK", "DARKPEARL", "GRAPE",]
-    white_colours = ["CREAM", "LIMEGREEN", "YELLOW", "LILAC", "GHOST",]
+    black_colours = ["INDIGO", "BLACK", "DARKPEARL", "GRAPE", "BEACH", "TEALPURP",]
+    white_colours = ["CREAM", "LIMEGREEN", "YELLOW", "LILAC", "GHOST", "TRANS", "ICE",]
     brown_colours = [
         "ROSEGOLD",
         "YELLOW",
@@ -522,6 +522,7 @@ class Pelt:
         "BRONZE",
         "ORANGE",
         "PEACH",
+        "STRAWBERRY",
     ]
     colour_categories = [ginger_colours, black_colours, white_colours, brown_colours]
     eye_sprites = [
