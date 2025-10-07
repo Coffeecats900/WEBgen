@@ -28,7 +28,7 @@
     "BEACH": "cool"
     "TEALPURP": "cool"
     "DARKPEARL": "basic"
-    "TRANS": "basic"     
+    "TRANS": "basic" 
   },
   "possible_tints": {
     "basic": ["pink", "gray", "red", "orange", "none"],

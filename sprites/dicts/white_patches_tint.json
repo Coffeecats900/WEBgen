@@ -28,7 +28,7 @@
     "BEACH": "black"
     "TEALPURP": "black"
     "DARKPEARL": "basic"
-    "TRANS": "basic"  	
+    "TRANS": "basic"
   },
   "possible_tints": {
     "basic": ["none", "offwhite", "offwhite"],
