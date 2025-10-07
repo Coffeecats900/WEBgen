@@ -21,14 +21,14 @@
     "GREEN": "cool",
     "GARENT": "warm",
 	"RED": "warm",
-	"GHOST": "basic"
-	"ICE": "cool"
-    "GRAPE": "brown"
-    "STRAWBERRY": "warm"
-    "BEACH": "cool"
-    "TEALPURP": "cool"
-    "DARKPEARL": "basic"
-    "TRANS": "basic" 
+	"GHOST": "basic",
+	"ICE": "cool",
+    "GRAPE": "brown",
+    "STRAWBERRY": "warm",
+    "BEACH": "cool",
+    "TEALPURP": "cool",
+    "DARKPEARL": "basic",
+    "TRANS": "basic"
   },
   "possible_tints": {
     "basic": ["pink", "gray", "red", "orange", "none"],
