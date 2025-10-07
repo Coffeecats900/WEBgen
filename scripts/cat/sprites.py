@@ -374,6 +374,7 @@ class Sprites:
             ["CREAM", "LIMEGREEN", "ROSEGOLD", "ROSE", "PURPLE", "INDIGO", "PINK"],
             ["LILAC", "YELLOW", "REDBLUE", "GREENYELLOW", "BLUE", "BRONZE", "BLACK"],
             ["PEACH", "BLUEBERRY", "ORANGE", "GREEN", "GARNET", "RED", "GHOST"],
+            ["ICE", "GRAPE", "STRAWBERRY", "BEACH", "TEALPURP", "DARKPEARL", "TRANS",]
         ]
 
         color_types = [

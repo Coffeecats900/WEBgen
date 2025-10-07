@@ -54,6 +54,13 @@ class Pelt:
         "GARNET",
         "RED",
         "GHOST",
+        "ICE",
+        "GRAPE",
+        "STRAWBERRY",
+        "BEACH",
+        "TEALPURP",
+        "DARKPEARL",
+        "TRANS",
     ]
     pelt_c_no_white = [
         "CREAM",
@@ -77,6 +84,13 @@ class Pelt:
         "GARNET",
         "RED",
         "GHOST",
+        "ICE",
+        "GRAPE",
+        "STRAWBERRY",
+        "BEACH",
+        "TEALPURP",
+        "DARKPEARL",
+        "TRANS",        
     ]
     pelt_c_no_bw = [
         "CREAM",
@@ -100,6 +114,13 @@ class Pelt:
         "GARNET",
         "RED",
         "GHOST",
+        "ICE",
+        "GRAPE",
+        "STRAWBERRY",
+        "BEACH",
+        "TEALPURP",
+        "DARKPEARL",
+        "TRANS",        
     ]
 
     tortiepatterns = [
@@ -483,10 +504,17 @@ class Pelt:
         "GARNET",
         "RED",
         "GHOST",
+        "ICE",
+        "GRAPE",
+        "STRAWBERRY",
+        "BEACH",
+        "TEALPURP",
+        "DARKPEARL",
+        "TRANS",        
     ]
-    ginger_colours = ["CREAM", "ROSEGOLD", "ROSE", "PINK", "LILAC", "PEACH", "ORANGE", "GARNET", "RED"]
-    black_colours = ["INDIGO", "BLACK", "GHOST"]
-    white_colours = ["CREAM", "LIMEGREEN", "YELLOW", "LILAC"]
+    ginger_colours = ["CREAM", "ROSEGOLD", "ROSE", "PINK", "LILAC", "PEACH", "ORANGE", "GARNET", "RED", "GRAPE", "STRAWBERRY", "GHOST", "DARKPEARL",]
+    black_colours = ["INDIGO", "BLACK", "DARKPEARL", "GRAPE",]
+    white_colours = ["CREAM", "LIMEGREEN", "YELLOW", "LILAC", "GHOST",]
     brown_colours = [
         "ROSEGOLD",
         "YELLOW",

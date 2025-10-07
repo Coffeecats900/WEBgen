@@ -21,7 +21,14 @@
     "GREEN": "gray",
     "GARENT": "brown",
 	"RED": "ginger",
-	"GHOST": "black"
+	"GHOST": "basic"
+	"ICE": "gray"
+    "GRAPE": "brown"
+    "STRAWBERRY": "ginger"
+    "BEACH": "black"
+    "TEALPURP": "black"
+    "DARKPEARL": "basic"
+    "TRANS": "basic"  	
   },
   "possible_tints": {
     "basic": ["none", "offwhite", "offwhite"],
