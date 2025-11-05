@@ -27,6 +27,13 @@ class Pelt:
         "Agouti": "agouti",
         "Singlestripe": "singlestripe",
         "Masked": "masked",
+        "Cloud": "cloud",
+        "Deer": "deer",
+        "Emo": "emo",
+        "Fire": "fire",
+        "Honey": "honey",
+        "Lightning": "lightning",
+        "Wave": "wave",
         "Tortie": None,
         "Calico": None,
     }
@@ -183,6 +190,13 @@ class Pelt:
         "agouti",
         "singlestripe",
         "masked",
+        "cloud",
+        "deer",
+        "emo",
+        "fire",
+        "honey",
+        "lightning",
+        "wave",
     ]
 
     pelt_length = ["short", "medium", "long"]
@@ -474,10 +488,10 @@ class Pelt:
         "DRY HERBS"
     ]
 
-    tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti"]
-    spotted = ["Speckled", "Rosette"]
-    plain = ["SingleColour", "TwoColour", "Smoke", "Singlestripe"]
-    exotic = ["Bengal", "Marbled", "Masked"]
+    tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti", "Wave"]
+    spotted = ["Speckled", "Rosette", "Cloud", "Honey", "Deer"]
+    plain = ["SingleColour", "TwoColour", "Smoke", "Singlestripe", "Fire"]
+    exotic = ["Bengal", "Marbled", "Masked", "Emo", "Lightning"]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
 

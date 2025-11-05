@@ -161,6 +161,13 @@ class Sprites:
             "fadestarclan",
             "fadedarkforest",
             "symbols",
+            "cloudcolours",
+            "deercolours",
+            "emocolours",
+            "firecolours",
+            "honeycolours",
+            "lightningcolours",
+            "wavecolours",
         ]:
             if "lineart" in x and (game.config["fun"]["april_fools"] or is_today(SpecialDate.APRIL_FOOLS)):
                 self.spritesheet(f"sprites/aprilfools{x}.png", x)
@@ -392,6 +399,13 @@ class Sprites:
             "agouticolours",
             "singlestripecolours",
             "maskedcolours",
+            "cloudcolours",
+            "deercolours",
+            "emocolours",
+            "firecolours",
+            "honeycolours",
+            "lightningcolours",
+            "wavecolours",
         ]
 
         for row, colors in enumerate(color_categories):
