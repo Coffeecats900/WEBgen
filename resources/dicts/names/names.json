@@ -60,7 +60,7 @@
     "Masked": ["stripe", "mask", "shade"],
     "Tortie": ["dapple", "speckle", "spot", "dapple"],
     "Calico": ["stripe", "dapple", "patch", "patch"],
-	"Cloud": ["puff", "sky", "breeze", "mist", "dawn",],
+	"Cloud": ["puff", "sky", "breeze", "mist", "dawn"],
 	"Deer": ["dapple", "meadow", "leap", "step", "song"],
 	"Emo": ["shade", "mask", "tear", "heart", "song", "echo", "shadow", "claw", "thorn"],
 	"Fire": ["blaze", "roar", "sun", "kindle", "light", "burn", "pyre"],
@@ -82,8 +82,8 @@
     "sokoke": ["stripe", "feather", "fern", "shade", "dapple"],
     "agouti": ["back", "pelt", "fur", "dapple", "splash"],
     "singlestripe": ["stripe", "back", "shade", "stem", "dapple"],
-    "masked": ["stripe", "dapple", "mask", "mask", "shade"]
-	"cloud": ["puff", "sky", "breeze", "mist", "dawn",],
+    "masked": ["stripe", "dapple", "mask", "mask", "shade"],
+	"cloud": ["puff", "sky", "breeze", "mist", "dawn"],
 	"deer": ["dapple", "meadow", "leap", "step", "song"],
 	"emo": ["shade", "mask", "tear", "heart", "song", "echo", "shadow", "claw", "thorn"],
 	"fire": ["blaze", "roar", "sun", "kindle", "light", "burn", "pyre"],
@@ -129,7 +129,7 @@
     "Torn", "Tremble", "Trickle", "Trout", "Tuft", "Tulip", "Tumble", "Turtle", "Valley", "Vine", "Vixen", "Wasp", "Weasel", "Weaver", "Web", 
     "Weed", "Weevil", "Wet", "Wheat", "Whimsy", "Whirl", "Whisker", "Whisper", "Whispering", "Whistle", "Whorl", "Wild", "Willow", 
     "Wind", "Wing", "Wish", "Wisteria", "Wolf", "Wolverine", "Wood", "Worm", "Wren", "Yarrow", "Yew", "Nightmare", "Dream", "Cosmo", "Angel",
-    "Zap", "Zinnia", "Winter", "Summer", "Spring", "Autumn", "Venus", "Jupiter", "Pluto", "Siris", "Vale", "Veil", "Thimble", "Mirage"
+    "Zap", "Zinnia", "Winter", "Summer", "Spring", "Autumn", "Venus", "Jupiter", "Pluto", "Siris", "Vale", "Veil", "Thimble", "Mirage",
 	"Paint", "Devil", "Imp", "Happy", "Twinkle", "Glitter", "Stardust", "Star", "Magenta", "Comet", "Mercury", "Mars", "Neptune", "Phobos",
 	"Saturn", "Venus", "Vega", "Waffle", "Sparkle", "Sunshine", "Unicorn", "Dragon", "Sphinx", "Griffin", "Neon", "Lucky", "Cookie", "Cake",
 	"Twinkle", "Dawn", "Dusk", "Spider-Man", "Noodle", "Ravoli", "Spaghetti", "Macaroni", "Rigatoni", "Freddy", "Buddy", "Dream", "Dazzle",
@@ -140,7 +140,7 @@
 	"Aquarius", "Pisces", "Blood", "Blackbird", "Bark", "Woof", "Oia", "Nyan", "Ornament", "Crown", "Diadem", "Garland", "Tiara", "King", "Queen",
 	"Royal", "Regal", "Reign", "Wacky", "Daredevil", "Junior", "Loopy", "Spirit", "Kawaii", "Eternal", "Alien", "Kooky", "Awesome", "Rave", "Dubstep",
 	"Gnarp", "Glorp", "Nothing", "Bingus", "Chungus", "Nibbles", "Doe", "Fawn", "Stag", "Antler", "Anti", "Arcane", "Botanic", "Brilliant", "Disco",
-	"Divine", "Domino", "Enchanted", "Enigma", "Eternal", "Galaxy", "Gloom", "Galaxy", "Lace", "Nebula", "Mini", "Mystic", "Obsidian", "Opal" "Oracle",
+	"Divine", "Domino", "Enchanted", "Enigma", "Eternal", "Galaxy", "Gloom", "Galaxy", "Lace", "Nebula", "Mini", "Mystic", "Obsidian", "Opal", "Oracle",
 	"Pixie", "Precious", "Radiant", "Rune", "Sacred", "Solar", "Soul", "Spirit", "Stellar", "Techno", "Void", "Nimbus", "Nightmare"
   ],
 
@@ -160,7 +160,7 @@
 	"Glossy", "Opal", "Satin", "Serene", "Tranquil", "Sunbeam", "Bliss", "Divine", "Ultimate", "Roseate", "Gay", "Bouncy",
 	"Royal", "Regal", "Reign", "Wacky", "Daredevil", "Junior", "Loopy", "Spirit", "Kawaii", "Eternal", "Alien", "Kooky", "Awesome", "Rave", "Dubstep",
 	"Gnarp", "Glorp", "Nothing", "Bingus", "Chungus", "Nibbles", "Doe", "Fawn", "Stag", "Antler", "Anti", "Arcane", "Botanic", "Brilliant", "Disco",
-	"Divine", "Domino", "Enchanted", "Enigma", "Eternal", "Galaxy", "Gloom", "Galaxy", "Lace", "Nebula", "Mini", "Mystic", "Obsidian", "Opal" "Oracle",
+	"Divine", "Domino", "Enchanted", "Enigma", "Eternal", "Galaxy", "Gloom", "Galaxy", "Lace", "Nebula", "Mini", "Mystic", "Obsidian", "Opal", "Oracle",
 	"Pixie", "Precious", "Radiant", "Rune", "Sacred", "Solar", "Soul", "Spirit", "Stellar", "Techno", "Void", "Nimbus", "Nightmare", "Twinkle", "Dawn",
 	"Dusk", "Freddy", "Buddy", "Dream", "Dazzle", 	"Blood", "Blackbird", "Bark", "Woof", "Oia", "Nyan"
   ],
@@ -247,7 +247,7 @@
     "Pea", "Cicada", "Pine", "Snake"
     ],
     "GARNET": [
-    "Shade", "Violet", "Crow", "Raven", "Ebony", "Wisteria", "Grackle", "Orchid", "Plum", "Mulberry", "Night", "Evening", "Dark", "Murk", "Ghost"
+    "Shade", "Violet", "Crow", "Raven", "Ebony", "Wisteria", "Grackle", "Orchid", "Plum", "Mulberry", "Night", "Evening", "Dark", "Murk", "Ghost",
     "Night", "Shadow", "Fig", "Midnight", "Grape", "Pitch", "Garnet", "Iris", "Garnet", "Ink", "Inky"
     ],
 	"RED": [
@@ -263,7 +263,7 @@
     "Moon", "Shark", "Cobalt", "Fish", "Tuna", "Neptune", "Periwinkle", "Sapphire", "Water"
     ],
 	"GRAPE": [
-	"Shade", "Violet", "Crow", "Raven", "Ebony", "Wisteria", "Grackle", "Orchid", "Plum", "Mulberry", "Night", "Evening", "Dark", "Murk", "Ghost"
+	"Shade", "Violet", "Crow", "Raven", "Ebony", "Wisteria", "Grackle", "Orchid", "Plum", "Mulberry", "Night", "Evening", "Dark", "Murk", "Ghost",
     "Night", "Shadow", "Fig", "Midnight", "Grape", "Pitch", "Garnet", "Iris", "Garnet", "Ink", "Inky"
     ],
 	"STRAWBERRY": [
@@ -276,13 +276,13 @@
     "Moon", "Shark", "Cobalt", "Fish", "Tuna", "Neptune", "Periwinkle", "Sapphire", "Water", "Surf", "Splash", "Tempest", "Coast", "Shore"
     ],
 	"TEALPURP": [
-	"Shade", "Violet", "Crow", "Raven", "Ebony", "Wisteria", "Grackle", "Orchid", "Plum", "Mulberry", "Night", "Evening", "Dark", "Murk", "Ghost"
+	"Shade", "Violet", "Crow", "Raven", "Ebony", "Wisteria", "Grackle", "Orchid", "Plum", "Mulberry", "Night", "Evening", "Dark", "Murk", "Ghost",
     "Night", "Shadow", "Fig", "Midnight", "Grape", "Pitch", "Garnet", "Iris", "Garnet", "Ink", "Inky", "Teal", "Purple"
     ],
 	"DARKPEARL": [
 	"Light", "Milk", "Fawn", "Opal", "Spell", "Veil", "Light", "Spirit", "Bright", "Radiant", "Oracle", "Marble", "Lace", "Rainbow", "Glass",
     "Bone", "Brilliant", "Jewel", "Nebula", "Spindle", "Ivory", "Pale", "Bright", "Stellar", "Magic", "Enigma","Shade", "Violet", "Crow", "Raven",
-	"Ebony", "Wisteria", "Grackle", "Orchid", "Plum", "Mulberry", "Night", "Evening", "Dark", "Murk", "Ghost" "Night", "Shadow", "Fig", "Midnight",
+	"Ebony", "Wisteria", "Grackle", "Orchid", "Plum", "Mulberry", "Night", "Evening", "Dark", "Murk", "Ghost", "Night", "Shadow", "Fig", "Midnight",
 	"Grape", "Pitch", "Garnet", "Iris", "Garnet", "Ink", "Inky"
     ],
 	"TRANS": [
@@ -372,7 +372,7 @@
     "TOXIC": ["Toxic", "Green", "Fern", "Weed", "Holly", "Clover", "Olive", "Jade", "Tree", "Algae", "Aloe"],
     "BLUE": ["Blue", "Blue", "Ice", "Sky", "Lake", "Frost", "Water", "Icicle", "Frosty", "Cold", "Rime"],
     "DUSK": ["Dark", "Blue", "Blue", "Sky", "Lake", "Berry", "Water", "Deep", "Cobalt", "River", "Night", "Rain"],
-    "LILY": ["Fern", "Green", "Vine", "Lily", "Reed", "Moss", "Spring", "Willow",],
+    "LILY": ["Fern", "Green", "Vine", "Lily", "Reed", "Moss", "Spring", "Willow"],
     "CYAN": ["Sky", "Blue", "River", "Rapid", "Ice", "Frost", "Cold"],
     "EMERALD": ["Emerald", "Green", "Shine", "Green", "Pine", "Weed"],
     "HEATHERBLUE": ["Heather", "Blue", "Lilac", "Rosemary", "Lavender", "Wisteria"],
@@ -385,8 +385,8 @@
     "PINKYELLOW": ["Blush", "Bubble", "Cherry", "Blossom", "Warm", "Pink", "Glow", "Light"],
     "DAWN": ["Periwinkle", "Sapphire", "Water", "Dawn", "Light", "Bliss", "Divine"],
     "SUNSET": ["Amber", "Ember", "Fire", "Sun", "Light", "Bliss", "Divine", "Pale", "Light"],
-    "TWILIGHT": ["Periwinkle", "Dusk", "Twilight", "Shimmer", "Light", "Bliss", "Divine"]
-	"EMBER": ["Fire", "Flame", "Ember", "Apple", "Autumn", "Russet", "Cardinal"]
+    "TWILIGHT": ["Periwinkle", "Dusk", "Twilight", "Shimmer", "Light", "Bliss", "Divine"],
+	  "EMBER": ["Fire", "Flame", "Ember", "Apple", "Autumn", "Russet", "Cardinal"]
   },
 
   "loner_names": [
