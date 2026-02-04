@@ -217,7 +217,7 @@ def event_for_herb_supply(trigger, supply_type, clan_size) -> bool:
     else:
         possible_herbs = herb_supply.base_herb_list
         chosen_herb = supply_type
-        if chosen_herb not in possible_herbs.keys():
+        if chosen_herb not in possible_herbs:
             print(f"WARNING: possible typo in supply constraint: {chosen_herb}")
             return False
         if herb_supply.get_herb_rating(chosen_herb) in trigger:
