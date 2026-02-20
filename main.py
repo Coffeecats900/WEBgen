@@ -23,7 +23,6 @@ import shutil
 import sys
 import threading
 import time
-from importlib import reload
 from importlib.util import find_spec
 
 if not getattr(sys, "frozen", False):
@@ -82,6 +81,7 @@ if os.path.exists("auto-updated"):
 
 setup_data_dir()
 timestr = time.strftime("%Y%m%d_%H%M%S")
+
 
 stdout_file = open(get_log_dir() + f"/stdout_{timestr}.log", "a")
 stderr_file = open(get_log_dir() + f"/stderr_{timestr}.log", "a")
@@ -154,48 +154,41 @@ else:
 print("Version Name: ", VERSION_NAME)
 print("Running on commit " + get_version_info().version_number)
 
-import pygame_gui
-from scripts.game_structure.monkeypatch import translate
-
-# MONKEYPATCH
-
-pygame_gui.core.utility.translate = translate
-for module_name, module in list(sys.modules.items()):
-    if module and hasattr(module, "translate"):  # Check for the attribute
-        if (
-            module.translate is pygame_gui.core.utility.translate
-        ):  # Ensure it's the original reference
-            setattr(module, "translate", translate)
-            break
-
-for module_name, module in list(sys.modules.items()):
-    if module_name.startswith(f"pygame_gui."):
-        if (
-            not module_name.endswith("utility")
-            and not module_name.endswith("container_interface")
-            and not module_name.endswith("_constants")
-            and not module_name.endswith("layered_gui_group")
-            and not module_name.endswith("object_id")
-        ):
-            # Reload the module
-            reload(module)
-
 # Load game
+from scripts.game_structure.game_essentials import game
+
+if game.config.get("disable_audio"):
+    os.environ["SDL_AUDIODRIVER"] = "dummy"
+    print("'disable_audio' set to True. Sound will be disabled.")
+
+import pygame
+
+pygame.display.init()
+pygame.font.init()
+pygame.display.set_caption("Clan Generator")
+from scripts.game_structure.screen_settings import toggle_fullscreen
+
+toggle_fullscreen(
+    fullscreen=game.settings["fullscreen"],
+    show_confirm_dialog=False,
+    ingame_switch=False,
+)
+
 from scripts.game_structure.audio import sound_manager, music_manager
+
+pygame.init()
+
 from scripts.game_structure.load_cat import load_cats, version_convert
 from scripts.game_structure.windows import SaveCheck
 from scripts.game_structure.screen_settings import screen_scale, MANAGER, screen
-from scripts.game_structure.game_essentials import game
 from scripts.game_structure.discord_rpc import _DiscordRPC
 from scripts.cat.sprites import sprites
 from scripts.clan import clan_class
 from scripts.utility import (
     quit,
 )  # pylint: disable=redefined-builtin
+from scripts.debug_menu import debugmode
 
-# from scripts.debug_menu import debugmode
-from scripts.debug_console import debug_mode
-import pygame
 
 # import all screens for initialization (Note - must be done after pygame_gui manager is created)
 from scripts.screens.all_screens import AllScreens
@@ -303,13 +296,6 @@ del finished_loading
 del loading_animation
 del load_data
 
-pygame.mixer.pre_init(buffer=44100)
-try:
-    pygame.mixer.init()
-except pygame.error:
-    print("Failed to initialize sound. Sound will be disabled.")
-    music_manager.audio_disabled = True
-    music_manager.muted = True
 AllScreens.start_screen.screen_switches()
 
 # dev screen info now lives in scripts/screens/screens_core
@@ -331,15 +317,8 @@ while 1:
     game.all_screens[game.current_screen].on_use()
     # EVENTS
     for event in pygame.event.get():
-        if (
-            event.type == pygame.KEYDOWN
-            and game.settings["keybinds"]
-            and debug_mode.debug_menu.visible
-        ):
-            pass
-        else:
-            game.all_screens[game.current_screen].handle_event(event)
-            sound_manager.handle_sound_events(event)
+        game.all_screens[game.current_screen].handle_event(event)
+        sound_manager.handle_sound_events(event)
 
         if event.type == pygame.QUIT:
             # Don't display if on the start screen or there is no clan.
@@ -367,7 +346,7 @@ while 1:
                 if game.settings["fullscreen"]:
                     print(f"(x: {_[0]}, y: {_[1]})")
                 else:
-                    print(f"(x: {_[0] * screen_scale}, y: {_[1] * screen_scale})")
+                    print(f"(x: {_[0]*screen_scale}, y: {_[1]*screen_scale})")
                 del _
 
         # F2 turns toggles visual debug mode for pygame_gui, allowed for easier bug fixes.
@@ -375,8 +354,7 @@ while 1:
             if event.key == pygame.K_F2:
                 MANAGER.print_layer_debug()
             elif event.key == pygame.K_F3:
-                debug_mode.toggle_debug_mode()
-                # debugmode.toggle_console()
+                debugmode.toggle_console()
             elif event.key == pygame.K_F11:
                 scripts.game_structure.screen_settings.toggle_fullscreen(
                     source_screen=getattr(
@@ -402,11 +380,11 @@ while 1:
     ):
         music_manager.play_queued()
 
-    debug_mode.pre_update(clock)
+    debugmode.update1(clock)
     # END FRAME
 
     MANAGER.draw_ui(screen)
 
-    debug_mode.post_update(screen)
+    debugmode.update2(screen)
 
     pygame.display.update()
