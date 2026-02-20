@@ -120,7 +120,7 @@ class Name:
             ) or all(
                 i == possible_three_letter[1][0]
                 for i in possible_three_letter[1]
-            # Prevent double animal names (ex. Spiderfalcon)
+                # Prevent double animal names (ex. Spiderfalcon)
             )
             double_animal = (
                 self.prefix in self.names_dict["animal_prefixes"]
@@ -145,7 +145,6 @@ class Name:
                     and str(self.suffix) != ""
                 )
             ):
-
                 # check if random die was for prefix
                 if name_fixpref:
                     self.give_prefix(eyes, color, biome)
@@ -169,6 +168,9 @@ class Name:
                 ):
                     double_animal = False
                 i += 1
+
+    def __str__(self):
+        return self.__repr__()
 
     # Generate possible prefix
     def give_prefix(self, eyes, colour, biome):

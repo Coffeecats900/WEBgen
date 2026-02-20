@@ -1,11 +1,11 @@
 import logging
 import os
 from copy import copy
-from typing import Union
 
 import pygame
 import ujson
 
+from scripts.special_dates import SpecialDate, is_today
 from scripts.game_structure.game_essentials import game
 
 logger = logging.getLogger(__name__)
@@ -34,13 +34,15 @@ class Sprites:
 
     def load_tints(self):
         try:
-            with open("sprites/dicts/tint.json", "r") as read_file:
+            with open("sprites/dicts/tint.json", "r", encoding="utf-8") as read_file:
                 self.cat_tints = ujson.loads(read_file.read())
         except IOError:
             print("ERROR: Reading Tints")
 
         try:
-            with open("sprites/dicts/white_patches_tint.json", "r") as read_file:
+            with open(
+                "sprites/dicts/white_patches_tint.json", "r", encoding="utf-8"
+            ) as read_file:
                 self.white_patches_tints = ujson.loads(read_file.read())
         except IOError:
             print("ERROR: Reading White Patches Tints")
@@ -167,7 +169,7 @@ class Sprites:
             "lightningcolours",
             "wavecolours",
         ]:
-            if "lineart" in x and game.config["fun"]["april_fools"]:
+            if "lineart" in x and (game.config["fun"]["april_fools"] or is_today(SpecialDate.APRIL_FOOLS)):
                 self.spritesheet(f"sprites/aprilfools{x}.png", x)
             else:
                 self.spritesheet(f"sprites/{x}.png", x)
@@ -192,8 +194,8 @@ class Sprites:
                 "YELLOW",
                 "PEACH",
                 "HAZEL",
-                "PALEGREEN",
                 "GREEN",
+                "TOXIC",
                 "BLUE",
                 "DUSK",
                 "LILY",
@@ -705,7 +707,9 @@ class Sprites:
         """
 
         if os.path.exists("resources/dicts/clan_symbols.json"):
-            with open("resources/dicts/clan_symbols.json") as read_file:
+            with open(
+                "resources/dicts/clan_symbols.json", encoding="utf-8"
+            ) as read_file:
                 self.symbol_dict = ujson.loads(read_file.read())
 
         # U and X omitted from letter list due to having no prefixes
@@ -786,7 +790,7 @@ class Sprites:
             pygame.Color(game.config["theme"]["dark_mode_clan_symbols"])
             if not force_light and game.settings["dark mode"]
             else pygame.Color(game.config["theme"]["light_mode_clan_symbols"]),
-            distance=0.2,
+            distance=0,
         )
         del var
 
